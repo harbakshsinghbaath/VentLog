@@ -9,7 +9,7 @@ VentLog is a personal online journal where you can rant, vent, and express your 
 - ✍️ **Daily Rants** — One private or public rant per day
 - 🔐 **Authentication** — JWT-based signup & login
 - 😤 **Mood Picker** — Choose your mood with emojis
-- 🗃️ **Rant History** — Browse your past vents
+- 🗃️ **Vent and Forget** — You daily vent is automatically deleted from our app by the end of the day
 - 🧑‍🤝‍🧑 **Public Wall** — See anonymous rants from others
 - 🛡️ **Privacy Controls** — Choose to keep your thoughts private or share them
 
@@ -31,5 +31,24 @@ VentLog is a personal online journal where you can rant, vent, and express your 
 
 ---
 
-## 📁 Project Structure
+## 🤝 Contribute
+
+Contributions are always welcome!
+
+If you find a bug, have a feature request, or just want to help improve VentLog, feel free to fork the repo and submit a pull request.
+
+### Steps to Contribute
+
+1. 🍴 Fork this repository  
+2. 🛠️ Create a new branch: `git checkout -b feature/your-feature-name`  
+3. 🔨 Make your changes and commit: `git commit -m 'Add your message here'`  
+4. 📤 Push to your fork: `git push origin feature/your-feature-name`  
+5. ✅ Open a pull request
+
+Please make sure your code follows the existing style and naming conventions. If it introduces a major change, open an issue to discuss it first.
+
+---
+
+Thanks for helping make VentLog better! 💖
+
 
