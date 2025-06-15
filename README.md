@@ -16,6 +16,7 @@ VentLog is a personal online journal where you can rant, vent, and express your 
 ---
 
 ## 🖼️ Screenshots
+![image](https://github.com/user-attachments/assets/13fe9643-b12b-4455-b215-4b4cb21cac23)
 
 > *(Add screenshots or screen recordings here)*
 
