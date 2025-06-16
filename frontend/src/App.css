@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'Porter Sans Block';
+  src: url('/fonts/porter-sans-inline-block-webfont.woff') format('woff');
+}
+
+body {
+  font-family: 'Porter Sans Block', sans-serif;
+}
+
+
+
+
+.container{
+  position:relative;
+  width: 100vw;
+  height: 100vh;
+  overflow:hidden;
+}
+.foreground{
+  right: 0;
+  position :absolute;
+  background: #ffc9bc;
+  width: 100vw;
+  height: 100vh;
+  border-top-left-radius:270px;
+  z-index: 2;
+  transition: width 1s ease-in-out, border-radius 1s ease-in-out;
+}
+.background{
+
+  z-index: 1;
+  position: absolute;
+  background: #410404;
+  height: 100vh;
+  width:100vw;
+  transition:width 1s ease-in-out;
+}
+
+.menu-button{
+  position:fixed;
+  top:20px;
+  left:20px;
+  width:50px;
+  height:50px;
+  background: none;
+  border:none;
+  cursor: pointer;
+}
+
+.foreground.shift{
+  border-top-left-radius: 47px;
+  width:80vw;
+}
+.open-menu{
+
+}
+.open-menu-button{
+  background: none;
+  border: none;
+  height: 60px;
+  width:80%;
+  left:50%;
+  transition: width 1s ease-in-out;
+  cursor: pointer;
+}
+.background.shift{
+display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 25vw;
+  align-items:center;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+@media screen and (max-width: 550px) {
+  .foreground.shift{
+    border-top-left-radius: 20px;
+
+  }
+  .background.shift {
+    align-items: flex-start;
+    width:27vw;
+  }
+  .menu-buttons{
+    text-align: left;
+    width: 100%;
+  }
+}
+.menu-buttons{
+  flex-grow: 1;
+  width: 80%;
+  height:5%;
+  text-align: center;
+  margin-top:15vh;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color:#ffc9bc;
+  font-size: 3vw;
+}
