@@ -1,4 +1,8 @@
 import {useState} from 'react';
+import homeRouter from "@/router/homeRouter.jsx";
+import loginRouter from "@/router/loginRouter.jsx";
+import signupRouter from "@/router/signupRouter.jsx"
+import ventRouter from "@/router/ventRouter.jsx";
 function MainLayout(){
     const[open,setOpen] = useState(false);
 
@@ -20,10 +24,10 @@ function MainLayout(){
                     <button className="open-menu-button" onClick={toggleMenu}>
                         <img src={"../public/menu_open.png"} alt="menu open"/>
                     </button>
-                    <button className="menu-buttons">Home</button>
-                    <button className="menu-buttons">Vent</button>
-                    <button className="menu-buttons">Login</button>
-                    <button className="menu-buttons">Sign Up</button>
+                    <button className="menu-buttons" onClick={() => {toggleMenu(); homeRouter();}} >Home</button>
+                    <button className="menu-buttons" onClick={() => {toggleMenu(); ventRouter();}}>Vent</button>
+                    <button className="menu-buttons" onClick={() => {toggleMenu(); loginRouter();}}>Login</button>
+                    <button className="menu-buttons" onClick={() => {toggleMenu(); signupRouter();}}>Sign Up</button>
                 </div> }
             </div>
             </div>

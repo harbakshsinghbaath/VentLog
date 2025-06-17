@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import './App.css'
-import MainLayout from "./mainLayout.jsx";
+import MainLayout from "../components/MainLayout.jsx";
 
 function App() {
 
