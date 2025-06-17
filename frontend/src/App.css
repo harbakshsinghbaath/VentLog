@@ -1,11 +1,17 @@
 @font-face {
-  font-family: 'Porter Sans Block';
-  src: url('/fonts/porter-sans-inline-block-webfont.woff') format('woff');
+  font-family: 'Porter Sans Block Regular' ;
+  src: url('./assets/fonts/porter-sans-inline-block-webfont.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  font-family: 'Porter Sans Block Regular', sans-serif !important;
 }
 
 body {
-  font-family: 'Porter Sans Block', sans-serif;
+  margin: 0;
 }
+
 
 
 
@@ -96,5 +102,5 @@ display: flex;
   border: none;
   background: none;
   color:#ffc9bc;
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
