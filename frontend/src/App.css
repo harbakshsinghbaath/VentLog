@@ -1,20 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 @font-face {
   font-family: 'Porter Sans Block Regular' ;
   src: url('./assets/fonts/porter-sans-inline-block-webfont.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-*{
-  font-family: 'Porter Sans Block Regular', sans-serif !important;
+.indie-flower-regular {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
-body {
+body{
+  font-family: 'Porter Sans Block Regular', sans-serif ;
   margin: 0;
 }
-
-
-
-
 
 .container{
   position:relative;
@@ -31,9 +33,10 @@ body {
   border-top-left-radius:270px;
   z-index: 2;
   transition: width 1s ease-in-out, border-radius 1s ease-in-out;
+  overflow: auto;
+  max-height: 100vh;
 }
 .background{
-
   z-index: 1;
   position: absolute;
   background: #410404;
@@ -41,7 +44,6 @@ body {
   width:100vw;
   transition:width 1s ease-in-out;
 }
-
 .menu-button{
   position:fixed;
   top:20px;
@@ -52,13 +54,9 @@ body {
   border:none;
   cursor: pointer;
 }
-
 .foreground.shift{
   border-top-left-radius: 47px;
   width:80vw;
-}
-.open-menu{
-
 }
 .open-menu-button{
   background: none;
@@ -70,7 +68,7 @@ body {
   cursor: pointer;
 }
 .background.shift{
-display: flex;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -79,6 +77,7 @@ display: flex;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 @media screen and (max-width: 550px) {
+
   .foreground.shift{
     border-top-left-radius: 20px;
 
@@ -91,8 +90,18 @@ display: flex;
     text-align: left;
     width: 100%;
   }
+  .home-heading{
+    font-size:9vw !important;
+  }
+  .intro-para-heading{
+    font-size: 6vw !important;
+  }
+  .home-para{
+    font-size: 4vw !important;
+  }
 }
 .menu-buttons{
+  font-family: 'Porter Sans Block Regular', sans-serif ;
   flex-grow: 1;
   width: 80%;
   height:5%;
@@ -103,4 +112,32 @@ display: flex;
   background: none;
   color:#ffc9bc;
   font-size: 2.5vw;
+}
+.home-heading{
+  z-index: 3;
+  text-align: center;
+  margin-top: 15vh;
+  font-size:8vh;
+  color: #410404;
+}
+.content-home{
+  font-family:'Indie Flower',cursive;
+  font-weight: bold;
+  background-color: #FFDDDD;
+  position: relative;
+  border-radius:60px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.intro-para-heading{
+  text-align: center;
+  font-size: 6vh;
+}
+.home-para{
+  text-align: justify;
+  font-size: 4vh;
 }

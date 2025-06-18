@@ -6,4 +6,4 @@ const signupRouter = () => {
 
 }
 
-export default signupRouter();
+export default signupRouter;

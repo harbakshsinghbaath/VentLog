@@ -5,4 +5,4 @@ const ventRouter = () => {
     return () => navigate('Vent');
 }
 
-export default ventRouter();
+export default ventRouter;

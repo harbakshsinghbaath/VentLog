@@ -6,4 +6,4 @@ const loginRouter = () => {
 
 }
 
-export default loginRouter();
+export default loginRouter;
