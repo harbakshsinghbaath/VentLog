@@ -1,8 +1,8 @@
 import {useState} from 'react';
-import homeRouter from "@/router/homeRouter.jsx";
-import loginRouter from "@/router/loginRouter.jsx";
-import signupRouter from "@/router/signupRouter.jsx"
-import ventRouter from "@/router/ventRouter.jsx";
+import homeButton from "@/router/homeButton.jsx";
+import loginButton from "@/router/loginButton.jsx";
+import signupButton from "@/router/signupButton.jsx"
+import ventButton from "@/router/ventButton.jsx";
 function MainLayout({children}){
     const[open,setOpen] = useState(false);
 
@@ -10,6 +10,11 @@ function MainLayout({children}){
         setOpen((prev) => !prev);
 
     };
+    const goHome = homeButton({toggleMenu});
+    const goVent = ventButton({toggleMenu});
+    const goLogin = loginButton({toggleMenu});
+    const goSignup = signupButton({toggleMenu});
+
     return(
         <>
             <div className="container">
@@ -24,15 +29,13 @@ function MainLayout({children}){
                     <button className="open-menu-button" onClick={toggleMenu}>
                         <img src={"../public/menu_open.png"} alt="menu open"/>
                     </button>
-                    <button className="menu-buttons" onClick={() => {toggleMenu(); homeRouter();}} >Home</button>
-                    <button className="menu-buttons" onClick={() => {toggleMenu(); ventRouter();}}>Vent</button>
-                    <button className="menu-buttons" onClick={() => {toggleMenu(); loginRouter();}}>Login</button>
-                    <button className="menu-buttons" onClick={() => {toggleMenu(); signupRouter();}}>Sign Up</button>
+                    <button className="menu-buttons" onClick={goHome} >Home</button>
+                    <button className="menu-buttons" onClick={goVent}>Vent</button>
+                    <button className="menu-buttons" onClick={goLogin}>Login</button>
+                    <button className="menu-buttons" onClick={goSignup}>Sign Up</button>
                 </div> }
             </div>
             </div>
-
-
         </>
 
     )

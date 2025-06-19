@@ -1,7 +1,7 @@
 import Home from "./pages/Home.jsx"
 import './App.css'
 import Login from "@/pages/Login.jsx"
-import Vent from "@/pages/Vent.jsx";
+import Vent from "./pages/Vent.jsx";
 import Signup from "@/pages/Signup.jsx";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 

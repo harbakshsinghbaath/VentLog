@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 @font-face {
   font-family: 'Porter Sans Block Regular' ;
@@ -12,6 +13,14 @@
   font-weight: 400;
   font-style: normal;
 }
+
+
+.quicksand-light {
+              font-family: "Quicksand", sans-serif;
+              font-optical-sizing: auto;
+              font-weight: 300;
+              font-style: normal;
+            }
 
 body{
   font-family: 'Porter Sans Block Regular', sans-serif ;
@@ -99,6 +108,12 @@ body{
   .home-para{
     font-size: 4vw !important;
   }
+  .vent-heading{
+    font-size:9vw!important;
+  }
+  .vent-subheading{
+    font-size: 6vw !important;
+  }
 }
 .menu-buttons{
   font-family: 'Porter Sans Block Regular', sans-serif ;
@@ -140,4 +155,40 @@ body{
 .home-para{
   text-align: justify;
   font-size: 4vh;
+}
+
+.vent-heading{
+  font-size:8vh;
+  text-align:center;
+  margin-top: 15vh;
+}
+.vent-subheading{
+  text-align:center;
+  font-family:"Quicksand",sans-serif!important;
+  font-size: 4vh;
+}
+.vent-notepad{
+  background:url('./images/notepad-vent.jpg');
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 5vh;
+  padding-left:15vw;
+  padding-top:15vw;
+  padding-right:1vw;
+  background-size: cover;
+  background-repeat:no-repeat;
+  aspect-ratio: 3/4;
+  outline: none;
+}
+.vent-text{
+
+  outline:none;
+  background: transparent;
+  border: none;
+  width:100%;
+  height:100%;
+  resize:none;
+  font-family:'Indie Flower',cursive;
+  font-size:3vw;
+  line-height: 3.20vw;
 }
