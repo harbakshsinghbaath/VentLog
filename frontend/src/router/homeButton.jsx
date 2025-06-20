@@ -7,7 +7,7 @@ const homeButton = ({toggleMenu}) => {
         if(toggleMenu){
             toggleMenu();
         }
-        navigate('/')
+        setTimeout(() => navigate('/'), 1000);
     }
 
 }

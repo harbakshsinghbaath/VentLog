@@ -6,7 +6,7 @@ function Vent() {
         <>
             <MainLayout>
                 <h1 className="vent-heading">VentLog</h1>
-                <h2 className="vent-subheading">Vent your heart out😊</h2>
+                <h2 className="vent-subheading">Vent all you want😘</h2>
                 <div className="vent-notepad">
                     <textarea className="vent-text" placeholder="Pour your heart out"></textarea>
                 </div>

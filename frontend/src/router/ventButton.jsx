@@ -7,7 +7,7 @@ const ventButton = ({toggleMenu}) => {
         if(toggleMenu){
             toggleMenu();
         }
-        navigate("/vent");
+        setTimeout(() => navigate("/vent"), 1000);
 
     }
 }

@@ -4,7 +4,7 @@ const signupButton = ({toggleMenu}) => {
     const navigate = useNavigate();
     return () => {
         if(toggleMenu) toggleMenu();
-        navigate('/signup');
+        setTimeout(() =>navigate('/signup'),1000);
     }
 
 }
