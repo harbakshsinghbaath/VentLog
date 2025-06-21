@@ -182,7 +182,6 @@ body{
   border-radius: 100px;
 }
 .vent-text{
-
   outline:none;
   background: transparent;
   border: none;
@@ -195,6 +194,7 @@ body{
 }
 
 .box{
+  opacity: 80%;
   background-color: #C58888;
   display: flex;
   flex-direction: column;
@@ -232,10 +232,10 @@ body{
 }
 
 .input-details{
-  width:30vw !important;
+  width:25vw !important;
   height:2.5vw;
   border:none;
-  border-radius:10px;
+  border-radius:20px;
   align-self: center;
   display: block;
   font-size:1.5vw;
