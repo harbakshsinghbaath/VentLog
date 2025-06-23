@@ -1,0 +1,7 @@
+POST http://localhost:5000/controllers/authControllers
+Content-Type: application/json
+
+{
+"email":"test@gmail.com",
+"password":"123453"
+}
