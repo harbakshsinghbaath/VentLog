@@ -45,6 +45,22 @@ body{
   overflow: auto;
   max-height: 100vh;
 }
+.home-logo{
+  z-index: 3;
+  display:block;
+  justify-content: center;
+  align-items:center;
+  width:250px;
+  height:auto;
+  margin-top:20px;
+}
+.header-home{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
 .background{
   z-index: 1;
   position: absolute;
@@ -131,9 +147,10 @@ body{
 .home-heading{
   z-index: 3;
   text-align: center;
-  margin-top: 15vh;
+  width:100vw;
   font-size:8vh;
   color: #410404;
+
 }
 .content-home{
   font-family:'Indie Flower',cursive;
