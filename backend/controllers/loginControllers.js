@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken';
 import verifyJWT from '../middleware/verifyJWT.js';
 
 
-const login = async (req,res) => {
+export const login = async (req,res) => {
     try{
     const {email,pwd} = req.body;
     if(!email || !pwd) return res.sendStatus(400).json({"message":"Email or password is required"});
@@ -48,3 +48,5 @@ const login = async (req,res) => {
         res.sendStatus(500).json({"message":"error in server login"});
     }
 };
+
+export default login;
